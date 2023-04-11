@@ -4,7 +4,7 @@ from django.urls import reverse
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField('Nome', max_length=255, unique=True)
 
     class Meta:
         verbose_name_plural = 'categories'
@@ -17,15 +17,15 @@ class Category(models.Model):
 
 
 class Place(models.Model):
-    name = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
-    address = models.CharField(max_length=255)
-    phone = models.CharField(max_length=255, null=True, blank=True)
-    site = models.CharField(max_length=255, null=True, blank=True)
-    registered = models.BooleanField(default=False)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='places')
-    categories = models.ManyToManyField(Category, related_name='places')
-    image = models.ImageField(upload_to='images', default='images/default.png')
+    name = models.CharField('Nome', max_length=255)
+    created_at = models.DateTimeField('Criado em', auto_now_add=True)
+    address = models.CharField('Endereço', max_length=255)
+    phone = models.CharField('Telefone', max_length=255, null=True, blank=True)
+    site = models.CharField('Site', max_length=255, null=True, blank=True)
+    registered = models.BooleanField('Registrado', default=False)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='places', verbose_name='Usuário')
+    categories = models.ManyToManyField(Category, related_name='places', verbose_name='Categorias')
+    image = models.ImageField(upload_to='images', default='images/default.png', verbose_name='Imagem')
 
     def __str__(self):
         return self.name
