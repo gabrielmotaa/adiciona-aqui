@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Lugares{% endblock %}
+
+{% block content %}
+    <h1>Lugares</h1>
+    {% for place in places %}
+        <div class="border">
+            <p>name: {{ place.name }}</p>
+            <p>created_at: {{ place.created_at }}</p>
+            <p>address: {{ place.address }}</p>
+            <p>phone: {{ place.phone }}</p>
+            <p>site: {{ place.site }}</p>
+            <p>registered: {{ place.registered }}</p>
+            <p>user: {{ place.user }}</p>
+            <p>categories: {% for category in place.categories.all %}{{ category.name }}, {% endfor %}</p>
+            <p>photo:</p>
+            <img src="{{ place.image.url }}" alt="">
+        </div>
+    {% endfor %}
+
+    <a href="{% url 'place_create' %}">Criar lugar</a>
+{% endblock %}
