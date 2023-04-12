@@ -17,6 +17,8 @@
         <p>photos:</p>
         <img src="{{ place.image.url }}" alt="">
         <br>
+	{% if place.user == user %}
         <a href="{% url 'place_update' place.pk %}">Atualizar</a>
+	{% endif %}
     </div>
 {% endblock %}

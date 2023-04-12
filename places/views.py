@@ -1,5 +1,6 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.core.exceptions import PermissionDenied
 
 from .models import Place
 from .forms import PlaceForm
@@ -29,7 +30,13 @@ class PlaceCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class PlaceUpdateView(LoginRequiredMixin, UpdateView):
+class PlaceUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Place
     template_name = 'places/place_update.html'
     form_class = PlaceForm
+
+    def test_func(self):
+        obj = self.get_object()
+        if obj.user != self.request.user:
+            raise PermissionDenied
+        return True
