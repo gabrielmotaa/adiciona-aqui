@@ -9,4 +9,6 @@
         {{ form.as_div }}
         <button type="submit">Log In</button>
     </form>
+    <p>Esqueceu a senha? <a href="{% url 'password_reset' %}">Redefinir</a></p>
+    <p>Não tem cadastro? <a href="{% url 'signup' %}">Registrar</a></p>
 {% endblock %}
