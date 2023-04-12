@@ -13,8 +13,15 @@ class CategoryInline(admin.TabularInline):
     extra = 0
 
 
+@admin.action(description='Marcar lugares como publicados')
+def make_registered(modeladmin, request, queryset):
+    queryset.update(registered=True)
+
+
 @admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
     list_display = ['name', 'address', 'registered']
     list_filter = ['registered']
     inlines = [CategoryInline]
+    actions = [make_registered]
+

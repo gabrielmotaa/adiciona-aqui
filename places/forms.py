@@ -7,4 +7,4 @@ class PlaceForm(forms.ModelForm):
 
     class Meta:
         model = Place
-        fields = ['name', 'address', 'phone', 'site', 'registered', 'categories', 'image']
+        fields = ['name', 'address', 'phone', 'site', 'categories', 'image']
