@@ -16,5 +16,7 @@
         <p>categories: {% for category in place.categories.all %}{{ category.name }}, {% endfor %}</p>
         <p>photos:</p>
         <img src="{{ place.image.url }}" alt="">
+        <br>
+        <a href="{% url 'place_update' place.pk %}">Atualizar</a>
     </div>
 {% endblock %}

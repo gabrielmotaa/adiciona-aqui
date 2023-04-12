@@ -1,13 +1,6 @@
 from django import forms
 
-from .models import Category, Place
-
-
-class CategoryForm(forms.ModelForm):
-
-    class Meta:
-        model = Category
-        fields = ['name']
+from .models import Place
 
 
 class PlaceForm(forms.ModelForm):

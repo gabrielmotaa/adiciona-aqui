@@ -4,9 +4,10 @@
 
 {% block content %}
     <h1>Lugares</h1>
+    <a href="{% url 'place_create' %}">Criar lugar</a>
     {% for place in places %}
         <div class="border">
-            <p>name: {{ place.name }}</p>
+            <p>name: <a href="{% url 'place_detail' place.pk %}">{{ place.name }}</a></p>
             <p>created_at: {{ place.created_at }}</p>
             <p>address: {{ place.address }}</p>
             <p>phone: {{ place.phone }}</p>
@@ -19,5 +20,5 @@
         </div>
     {% endfor %}
 
-    <a href="{% url 'place_create' %}">Criar lugar</a>
+
 {% endblock %}
