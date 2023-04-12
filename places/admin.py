@@ -13,7 +13,7 @@ class CategoryInline(admin.TabularInline):
     extra = 0
 
 
-@admin.action(description='Marcar lugares como publicados')
+@admin.action(description='Marcar lugares como registrados')
 def make_registered(modeladmin, request, queryset):
     queryset.update(registered=True)
 
