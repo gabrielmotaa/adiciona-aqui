@@ -22,6 +22,12 @@ class PlaceCreateView(LoginRequiredMixin, CreateView):
     template_name = 'places/place_create.html'
     form_class = PlaceForm
 
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.user = self.request.user
+        self.object.save()
+        return super().form_valid(form)
+
 
 class PlaceUpdateView(LoginRequiredMixin, UpdateView):
     model = Place
