@@ -3,10 +3,11 @@
 {% block title %}Lugar{% endblock %}
 
 {% block content %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_div }}
-    <input type="submit" value="Atualizar">
-</form>
-
+    <h1>Atualizar Lugar</h1>
+    {% include 'partials/links.html' %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <input type="submit" value="Atualizar">
+    </form>
 {% endblock %}

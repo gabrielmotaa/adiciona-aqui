@@ -1,0 +1,5 @@
+<ul>
+    {% if request.path != '/' %}<li><a href="{% url 'home' %}">Página inicial</a></li>{% endif %}
+    <li><a href="{% url 'about_us' %}">Sobre nós</a></li>
+    <li><a href="{% url 'place_list' %}">Lugares</a></li>
+</ul>

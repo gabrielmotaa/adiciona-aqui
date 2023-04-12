@@ -3,10 +3,11 @@
 {% block title %}Lugar{% endblock %}
 
 {% block content %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_div }}
-    <input type="submit" value="Enviar">
-</form>
-
+    <h1>Criar novo lugar</h1>
+    {% include 'partials/links.html' %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <input type="submit" value="Enviar">
+    </form>
 {% endblock %}

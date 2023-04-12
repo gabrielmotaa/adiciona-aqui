@@ -4,7 +4,7 @@
 
 {% block content %}
     <h1>Lugar: {{ place.name }}</h1>
-
+    {% include 'partials/links.html' %}
     <div class="border">
         <p>name: {{ place.name }}</p>
         <p>created_at: {{ place.created_at }}</p>

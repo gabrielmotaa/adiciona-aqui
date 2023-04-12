@@ -4,6 +4,8 @@
 
 {% block content %}
     <h1>Lugares</h1>
+    {% include 'partials/links.html' %}
+    <br>
     <a href="{% url 'place_create' %}">Criar lugar</a>
     {% for place in places %}
         <div class="border">
