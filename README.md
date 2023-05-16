@@ -29,3 +29,32 @@ Se quiser acessar a área admin, deve criar um *superuser*, sendo necessário um
 ```commandline
 (venv) $ python manage.py createsuperuser
 ```
+
+Para popular o banco de dados com categorias:
+```commandline
+(venv) $ python manage.py populate_categories
+```
+
+## Desenvolvimento
+
+Primeiramente, é necessário instalar as dependências de desenvolvimento:
+```commandline
+(venv) $ pip install -r requirements/dev.txt
+```
+
+O projeto usa tailwindcss, logo é preciso ter um processo rodando ao fazer modificações e também criar o build final ao terminar.
+
+Comando em desenvolvimento:
+```commandline
+(venv) $ tailwindcss -o static/css/styles.css --watch
+```
+
+Para fazer o build final:
+```commandline
+(venv) $ tailwindcss -o static/css/styles.css --minify
+```
+
+Ao fazer mudanças no template, para garantir um padronização, é possível rodar o djhtml:
+```commandline
+(venv) $ djhtml templates/
+```
