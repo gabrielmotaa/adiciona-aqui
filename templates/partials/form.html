@@ -1,0 +1,36 @@
+{% load widget_tweaks %}
+
+{% for hidden_field in form.hidden_fields %}
+  {{ hidden_field }}
+{% endfor %}
+
+{% if form.non_field_errors %}
+  <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50" role="alert">
+    {% for error in form.non_field_errors %}
+      {{ error }}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% for field in form.visible_fields %}
+  <div class="mb-6">
+    <label for="{{ field.id_for_label }}" class="block mb-2 text-sm font-medium text-gray-900">{{ field.label }}</label>
+
+    {% if form.is_bound %}
+      {% if field.errors %}
+        {% render_field field class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5" %}
+        {% for error in field.errors %}
+          <p class="mt-2 text-sm text-red-600">{{ error }}</p>
+        {% endfor %}
+      {% else %}
+        {% render_field field class="bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5" %}
+      {% endif %}
+    {% else %}
+      {% render_field field class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" %}
+    {% endif %}
+
+    {% if field.help_text %}
+      <div class="mt-1 text-sm text-gray-500">{{ field.help_text }}</div>
+    {% endif %}
+  </div>
+{% endfor %}

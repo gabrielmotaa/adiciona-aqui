@@ -16,7 +16,13 @@ class PlaceListView(LoginRequiredMixin, ListView):
     model = Place
     template_name = 'places/place_list.html'
     context_object_name = 'places'
+    paginate_by = 3
 
+    def get_queryset(self):
+        qs = super().get_queryset()
+        qs = qs.filter(user=self.request.user)
+        qs = qs.order_by('-pk')
+        return qs
 
 class PlaceCreateView(LoginRequiredMixin, CreateView):
     model = Place
@@ -28,6 +34,10 @@ class PlaceCreateView(LoginRequiredMixin, CreateView):
         self.object.user = self.request.user
         self.object.save()
         return super().form_valid(form)
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        return qs.select_related('categories')
 
 
 class PlaceUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
