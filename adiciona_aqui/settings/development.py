@@ -1,3 +1,3 @@
-from .base import *
+from settings.base import *
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
