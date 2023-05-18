@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from places.models import Category
 
 CATEGORIES = [
@@ -46,7 +46,10 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if Category.objects.all().count() > 0:
-            raise CommandError('Comando só pode ser rodado em um banco vazio')
+            self.stdout.write(
+                self.style.WARNING('Comando já foi rodado, pulando')
+            )
+            return
 
         Category.objects.bulk_create([
             Category(name=category) for category in CATEGORIES
