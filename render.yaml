@@ -10,7 +10,7 @@ services:
     name: adiciona_aqui
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn adiciona_aqui.wsgi:application"
+    startCommand: "gunicorn adiciona_aqui.wsgi:application --log-file -"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: adiciona_aqui.settings.production
