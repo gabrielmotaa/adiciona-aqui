@@ -1,0 +1,9 @@
+asgiref==3.6.0
+Django==4.2
+Pillow==9.5.0
+python-decouple==3.8
+sqlparse==0.4.3
+django-widget-tweaks==1.4.12
+whitenoise[brotli]==6.4.0
+python-dotenv==1.0.0
+django-cloudinary-storage==0.3.0
