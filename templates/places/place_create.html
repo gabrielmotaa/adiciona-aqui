@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 
-{% block title %}Adicionar Lugar{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Add a new place" %}{% endblock %}
 
 {% block content %}
-    <h1 class="text-center text-gray-800 text-shadow text-2xl font-bold my-3">Criar novo local</h1>
+    <h1 class="text-center text-gray-800 text-shadow text-2xl font-bold my-3">{% trans "Create a new place" %}</h1>
     <div class="max-w-2xl mx-auto px-4 mb-4">
-        <button class="my-3 py-2 font-semibold text-gray-800 block w-full bg-gray-300 rounded" id="address-btn">Clique aqui para coletar localização atual</button>
+        <button class="my-3 py-2 font-semibold text-gray-800 block w-full bg-gray-300 rounded" id="address-btn">{% trans "Click here to collect your current location" %}</button>
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {% include 'partials/form.html' with form=form %}
-            <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">Enviar</button>
+            <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">{% trans "Send" %}</button>
         </form>
     </div>
 {% endblock %}

@@ -1,0 +1,486 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-21 00:21-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: adiciona_aqui/settings/base.py:131
+msgid "English"
+msgstr "Inglês"
+
+#: adiciona_aqui/settings/base.py:132
+msgid "Brazilian Portuguese"
+msgstr "Português"
+
+#: adiciona_aqui/urls.py:30
+msgid "admin/"
+msgstr "admin/"
+
+#: adiciona_aqui/urls.py:33
+msgid "users/"
+msgstr "usuarios/"
+
+#: core/urls.py:8
+msgid "about-us/"
+msgstr "sobre-nos/"
+
+#: places/models.py:8 places/models.py:22 templates/places/place_list.html:14
+msgid "Name"
+msgstr "Nome"
+
+#: places/models.py:11
+msgid "category"
+msgstr "categoria"
+
+#: places/models.py:12
+msgid "categories"
+msgstr "categorias"
+
+#: places/models.py:23 templates/places/place_detail.html:25
+#: templates/places/place_list.html:22
+msgid "Created at"
+msgstr "Criado em"
+
+#: places/models.py:24 templates/places/place_detail.html:13
+#: templates/places/place_list.html:18
+msgid "Address"
+msgstr "Endereço"
+
+#: places/models.py:25 templates/places/place_detail.html:17
+msgid "Phone"
+msgstr "Telefone"
+
+#: places/models.py:26 templates/places/place_detail.html:21
+msgid "Site"
+msgstr "Site"
+
+#: places/models.py:27 templates/places/place_detail.html:31
+#: templates/places/place_list.html:27
+msgid "Registered"
+msgstr "Registrado"
+
+#: places/models.py:28
+msgid "User"
+msgstr "Usuário"
+
+#: places/models.py:29 templates/places/place_detail.html:37
+msgid "Categories"
+msgstr "Categorias"
+
+#: places/models.py:30
+msgid "Image"
+msgstr "Imagem"
+
+#: places/models.py:33
+msgid "place"
+msgstr "local"
+
+#: places/models.py:34
+msgid "places"
+msgstr "locais"
+
+#: places/urls.py:7
+msgid "places/"
+msgstr "locais/"
+
+#: places/urls.py:8
+msgid "places/<int:pk>/"
+msgstr "locais/<int:pk>/"
+
+#: places/urls.py:9
+msgid "places/<int:pk>/update/"
+msgstr "locais/<int:pk>/atualizar/"
+
+#: places/urls.py:10
+msgid "places/add/"
+msgstr "locais/adicionar/"
+
+#: templates/core/about_us.html:7 templates/partials/footer.html:12
+msgid "About us"
+msgstr "Sobre nós"
+
+#: templates/core/about_us.html:9
+msgid "Welcome to Adiciona Aqui!"
+msgstr "Bem vindo ao Adiciona Aqui!"
+
+#: templates/core/about_us.html:10
+msgid ""
+"We are Gabriel da Mota and Gabriela Rocco, students in the 5th semester of "
+"Information Technology at Univesp. We are very excited to present our "
+"project, Adiciona Aqui (Add Here), developed as part of the integrative "
+"project discipline."
+msgstr ""
+"Somos Gabriel da Mota e Gabriela Rocco, estudantes do 5º semestre de "
+"Tecnologia da Informação na Univesp. Estamos muito animados em apresentar "
+"nosso projeto, o Adiciona Aqui, desenvolvido como parte da disciplina de "
+"projeto integrador."
+
+#: templates/core/about_us.html:11
+msgid ""
+"The idea came from a personal demand we faced recently, when we moved to "
+"this region. Finding local businesses was not always an easy task due to the "
+"lack of online presence of many establishments."
+msgstr ""
+"A ideia surgiu a partir de uma demanda pessoal que enfrentamos recentemente, "
+"quando nos mudamos para esta região. Encontrar comércios locais nem sempre "
+"foi uma tarefa fácil devido à falta de presença online de muitos "
+"estabelecimentos."
+
+#: templates/core/about_us.html:12
+msgid ""
+"We decided to use our technology knowledge and skills to create a "
+"collaborative solution. Thus Adiciona Aqui was born, a platform where users "
+"can recommend local businesses that do not yet have an online presence."
+msgstr ""
+"Decidimos utilizar nosso conhecimento e habilidades em tecnologia para criar "
+"uma solução colaborativa. Assim nasceu o Adiciona Aqui, uma plataforma onde "
+"os usuários podem indicar comércios locais que ainda não possuem presença "
+"online."
+
+#: templates/core/about_us.html:13
+msgid ""
+"Our main objective is to facilitate the discovery of these establishments "
+"and help them gain visibility on the internet, especially through Google "
+"Maps. We believe that strengthening the online presence of local businesses "
+"is essential to boost the region's economy and facilitate residents' access "
+"to quality local products and services."
+msgstr ""
+"Nosso principal objetivo é facilitar a descoberta desses estabelecimentos e "
+"ajudá-los a ganhar visibilidade na internet, especialmente através do Google "
+"Maps. Acreditamos que fortalecer a presença online dos negócios locais é "
+"fundamental para impulsionar a economia da região e facilitar o acesso dos "
+"moradores a produtos e serviços locais de qualidade."
+
+#: templates/core/about_us.html:14
+msgid ""
+"At Adiciona Aqui, you are a fundamental part of this collaborative process. "
+"We invite you to recommend businesses you know and share this platform with "
+"your friends, family and neighbors. The more people who participate, the "
+"more complete and useful our local business database will be."
+msgstr ""
+"No Adiciona Aqui, você é parte fundamental desse processo colaborativo. "
+"Convidamos você a indicar os comércios que conhece e a compartilhar essa "
+"plataforma com seus amigos, familiares e vizinhos. Quanto mais pessoas "
+"participarem, mais completo e útil será o nosso banco de dados de negócios "
+"locais."
+
+#: templates/core/about_us.html:15
+msgid ""
+"We value active community participation and are committed to providing a "
+"simple, intuitive platform where you can easily add new businesses and help "
+"promote the local economy. Together, we can make a difference and contribute "
+"to the growth of local businesses."
+msgstr ""
+"Valorizamos a participação ativa da comunidade e estamos comprometidos em "
+"fornecer uma plataforma simples e intuitiva, onde você possa facilmente "
+"adicionar novos comércios e ajudar a promover a economia local. Juntos, "
+"podemos fazer a diferença e contribuir para o crescimento de negócios locais."
+
+#: templates/core/about_us.html:16
+msgid ""
+"We thank all users who join us on this journey. Adiciona Aqui is a project "
+"in constant evolution, and we count on your support, feedback and "
+"suggestions to continually improve it."
+msgstr ""
+"Agradecemos a todos os usuários que se juntam a nós nessa jornada. O "
+"Adiciona Aqui é um projeto em constante evolução, e contamos com seu apoio, "
+"feedback e sugestões para melhorá-lo continuamente."
+
+#: templates/core/about_us.html:17
+msgid "Best regards,"
+msgstr "Com os melhores cumprimentos,"
+
+#: templates/core/about_us.html:18
+msgid "Gabriel da Mota and Gabriela Rocco"
+msgstr "Gabriel da Mota e Gabriela Rocco"
+
+#: templates/core/about_us.html:19
+msgid "Adiciona Aqui Team"
+msgstr "Equipe Adiciona Aqui"
+
+#: templates/core/home.html:7
+msgid ""
+"Collaborate with the community and help small businesses and services gain "
+"visibility on the internet"
+msgstr ""
+"Colabore com a comunidade e ajude pequenos negócios e serviços a ganhar "
+"visibilidade na internet"
+
+#: templates/core/home.html:12
+msgid "How does it works?"
+msgstr "Como funciona?"
+
+#: templates/core/home.html:13
+msgid ""
+"With our service, you can easily add locations that aren't already on Google "
+"Maps, share useful information, and even share photos of the locations."
+msgstr ""
+"Com o nosso serviço, você pode adicionar facilmente locais que ainda não "
+"estão no Google Maps, compartilhar informações úteis e até mesmo fotos dos "
+"locais."
+
+#: templates/core/home.html:15
+msgid ""
+"We mainly want to help small local businesses that don't yet have a strong "
+"digital presence. With your help, we can make our platform a valuable "
+"resource for everyone!"
+msgstr ""
+"Queremos ajudar principalmente pequenos negócios locais que ainda não têm "
+"uma presença digital forte. Com sua ajuda, podemos tornar nossa plataforma "
+"um recurso valioso para todos!"
+
+#: templates/core/home.html:17
+msgid "Join us and add a new place"
+msgstr "Junte-se a nós e adicione um novo local"
+
+#: templates/core/home.html:24
+msgid "New additions"
+msgstr "Novas adições"
+
+#: templates/partials/footer.html:5
+msgid "Homepage"
+msgstr "Página inicial"
+
+#: templates/partials/footer.html:7 templates/partials/header.html:16
+msgid "Logout"
+msgstr "Sair"
+
+#: templates/partials/footer.html:9 templates/users/login.html:19
+msgid "Log in"
+msgstr "Entrar"
+
+#: templates/partials/footer.html:10 templates/users/login.html:22
+#: templates/users/signup.html:5 templates/users/signup.html:8
+#: templates/users/signup.html:13
+msgid "Signup"
+msgstr "Registrar-se"
+
+#: templates/partials/header.html:6 templates/users/login.html:8
+msgid "Log In"
+msgstr "Entrar"
+
+#: templates/partials/header.html:14 templates/partials/header.html:19
+msgid "Add a place"
+msgstr "Adicionar local"
+
+#: templates/partials/header.html:15
+msgid "My places"
+msgstr "Meus locais"
+
+#: templates/partials/header.html:18
+msgid "Found a new place?"
+msgstr "Achou um novo local?"
+
+#: templates/places/place_create.html:5
+msgid "Add a new place"
+msgstr "Adicionar local"
+
+#: templates/places/place_create.html:8
+msgid "Create a new place"
+msgstr "Criar novo local"
+
+#: templates/places/place_create.html:10
+msgid "Click here to collect your current location"
+msgstr "Clique aqui para coletar sua localização atual"
+
+#: templates/places/place_create.html:14
+msgid "Send"
+msgstr "Enviar"
+
+#: templates/places/place_detail.html:5
+msgid "Place"
+msgstr "Local"
+
+#: templates/places/place_detail.html:29
+msgid "Status"
+msgstr "Status"
+
+#: templates/places/place_detail.html:33 templates/places/place_list.html:29
+msgid "Pending"
+msgstr "Pendente"
+
+#: templates/places/place_detail.html:46
+msgid "Want to"
+msgstr "Deseja"
+
+#: templates/places/place_detail.html:46
+msgid "edit"
+msgstr "editar"
+
+#: templates/places/place_list.html:5 templates/places/place_list.html:8
+msgid "My Places"
+msgstr "Meus locais"
+
+#: templates/places/place_list.html:36
+msgid "Page"
+msgstr "Página"
+
+#: templates/places/place_list.html:36
+msgid "of"
+msgstr "de"
+
+#: templates/places/place_list.html:41 templates/places/place_list.html:47
+msgid "Previous"
+msgstr "Anterior"
+
+#: templates/places/place_list.html:52 templates/places/place_list.html:57
+msgid "Next"
+msgstr "Próxima"
+
+#: templates/places/place_update.html:5 templates/places/place_update.html:13
+msgid "Update"
+msgstr "Atualizar"
+
+#: templates/places/place_update.html:8
+msgid "Update Place"
+msgstr "Adicionar local"
+
+#: templates/users/login.html:12
+msgid "Account is needed!"
+msgstr "Conta necessária!"
+
+#: templates/users/login.html:12
+msgid "To add new places you must log in."
+msgstr "Para adicionar novos locais é necessário realizar o login."
+
+#: templates/users/login.html:21 templates/users/password_reset.html:5
+#: templates/users/password_reset.html:8
+msgid "Forgot your password?"
+msgstr "Esqueceu sua senha?"
+
+#: templates/users/login.html:21
+msgid "Reset"
+msgstr "Redefinir"
+
+#: templates/users/login.html:22
+msgid "Don't have an account?"
+msgstr "Não tem cadastro?"
+
+#: templates/users/password_reset.html:9
+msgid "Enter your email below, and we will send you instructions to reset it."
+msgstr "Digite seu email abaixo e nós te mandaremos instruções para resetá-la."
+
+#: templates/users/password_reset.html:14
+msgid "Send me instructions!"
+msgstr "Me envie instruções!"
+
+#: templates/users/password_reset_complete.html:5
+#: templates/users/password_reset_complete.html:8
+msgid "Password reset completed"
+msgstr "Redefinição de senha concluída"
+
+#: templates/users/password_reset_complete.html:9
+msgid "Your new password has been set. Now you can"
+msgstr "Sua nova senha foi definida. Agora você pode"
+
+#: templates/users/password_reset_complete.html:9
+msgid "login"
+msgstr "entrar"
+
+#: templates/users/password_reset_confirm.html:5
+msgid "Enter your new password"
+msgstr "Insira sua nova senha"
+
+#: templates/users/password_reset_confirm.html:9
+msgid "Set your new password!"
+msgstr "Defina sua nova senha!"
+
+#: templates/users/password_reset_confirm.html:14
+msgid "Update my password"
+msgstr "Atualize minha senha"
+
+#: templates/users/password_reset_confirm.html:18
+msgid ""
+"The password reset link is invalid, possibly because it has already been "
+"used. Please make a new password reset request."
+msgstr ""
+"O link de redefinição de senha está inválido, possivelmente por já ter sido "
+"utilizado. Por favor, faça uma nova requisição de redefinição de senha."
+
+#: templates/users/password_reset_done.html:5
+msgid "Email sent"
+msgstr "E-mail enviado"
+
+#: templates/users/password_reset_done.html:8
+msgid "Check your inbox"
+msgstr "Cheque sua caixa de entrada"
+
+#: templates/users/password_reset_done.html:9
+msgid ""
+"We have sent instructions to reset your password to your email. You should "
+"receive them soon."
+msgstr ""
+"Nós enviamos ao seu email as instruções para resetar sua senha. Você deve "
+"recebê-las em breve."
+
+#: templates/users/signup.html:15
+msgid "Already registered?"
+msgstr "Já tem conta?"
+
+#: templates/users/signup.html:15
+msgid "Login"
+msgstr "Entrar"
+
+#: users/admin.py:18
+msgid "Permissions"
+msgstr "Permissões"
+
+#: users/managers.py:17
+msgid "The Email must be set"
+msgstr "O e-mail deve ser definido"
+
+#: users/managers.py:33
+msgid "Superuser must have is_staff=True."
+msgstr "Superuser deve ter is_staff=True."
+
+#: users/managers.py:35
+msgid "Superuser must have is_superuser=True."
+msgstr "Superuser deve ter is_superuser=True."
+
+#: users/models.py:11
+msgid "email address"
+msgstr "endereço de e-mail"
+
+#: users/urls.py:7
+msgid "signup/"
+msgstr "registrar/"
+
+#: users/urls.py:8
+msgid "login/"
+msgstr "entrar/"
+
+#: users/urls.py:9
+msgid "logout/"
+msgstr "sair/"
+
+#: users/urls.py:10
+msgid "password-reset/"
+msgstr "redefinir-senha/"
+
+#: users/urls.py:11
+msgid "password-reset/done/"
+msgstr "redefinir-senha/pronto/"
+
+#: users/urls.py:12
+msgid "reset/<uidb64>/<token>/"
+msgstr "redefinir/<uidb64>/<token>/"
+
+#: users/urls.py:13
+msgid "reset/done/"
+msgstr "redefinir/pronto/"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"

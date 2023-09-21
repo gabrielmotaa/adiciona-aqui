@@ -1,13 +1,19 @@
+from parler.models import TranslatableModel, TranslatedFields
+
 from django.db import models
 from django.conf import settings
 from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 
 
-class Category(models.Model):
-    name = models.CharField('Nome', max_length=255, unique=True)
+class Category(TranslatableModel):
+    translations = TranslatedFields(
+        name=models.CharField(_('Name'), max_length=255, unique=True),
+    )
 
     class Meta:
-        verbose_name_plural = 'categories'
+        verbose_name = _('category')
+        verbose_name_plural = _('categories')
 
     def __str__(self):
         return self.name
@@ -17,15 +23,19 @@ class Category(models.Model):
 
 
 class Place(models.Model):
-    name = models.CharField('Nome', max_length=255)
-    created_at = models.DateTimeField('Criado em', auto_now_add=True)
-    address = models.CharField('Endereço', max_length=255)
-    phone = models.CharField('Telefone', max_length=255, null=True, blank=True)
-    site = models.CharField('Site', max_length=255, null=True, blank=True)
-    registered = models.BooleanField('Registrado', default=False)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='places', verbose_name='Usuário')
-    categories = models.ManyToManyField(Category, related_name='places', verbose_name='Categorias')
-    image = models.ImageField(upload_to='images', default='images/default.png', verbose_name='Imagem')
+    name = models.CharField(_('Name'), max_length=255)
+    created_at = models.DateTimeField(_('Created at'), auto_now_add=True)
+    address = models.CharField(_('Address'), max_length=255)
+    phone = models.CharField(_('Phone'), max_length=255, null=True, blank=True)
+    site = models.CharField(_('Site'), max_length=255, null=True, blank=True)
+    registered = models.BooleanField(_('Registered'), default=False)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='places', verbose_name=_('User'))
+    categories = models.ManyToManyField(Category, related_name='places', verbose_name=_('Categories'))
+    image = models.ImageField(_('Image'), upload_to='images', default='images/default.png')
+
+    class Meta:
+        verbose_name = _('place')
+        verbose_name_plural = _('places')
 
     def __str__(self):
         return self.name

@@ -1,0 +1,443 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-21 00:21-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: adiciona_aqui/settings/base.py:131
+msgid "English"
+msgstr ""
+
+#: adiciona_aqui/settings/base.py:132
+msgid "Brazilian Portuguese"
+msgstr ""
+
+#: adiciona_aqui/urls.py:30
+msgid "admin/"
+msgstr ""
+
+#: adiciona_aqui/urls.py:33
+msgid "users/"
+msgstr ""
+
+#: core/urls.py:8
+msgid "about-us/"
+msgstr ""
+
+#: places/models.py:8 places/models.py:22 templates/places/place_list.html:14
+msgid "Name"
+msgstr ""
+
+#: places/models.py:11
+msgid "category"
+msgstr ""
+
+#: places/models.py:12
+msgid "categories"
+msgstr ""
+
+#: places/models.py:23 templates/places/place_detail.html:25
+#: templates/places/place_list.html:22
+msgid "Created at"
+msgstr ""
+
+#: places/models.py:24 templates/places/place_detail.html:13
+#: templates/places/place_list.html:18
+msgid "Address"
+msgstr ""
+
+#: places/models.py:25 templates/places/place_detail.html:17
+msgid "Phone"
+msgstr ""
+
+#: places/models.py:26 templates/places/place_detail.html:21
+msgid "Site"
+msgstr ""
+
+#: places/models.py:27 templates/places/place_detail.html:31
+#: templates/places/place_list.html:27
+msgid "Registered"
+msgstr ""
+
+#: places/models.py:28
+msgid "User"
+msgstr ""
+
+#: places/models.py:29 templates/places/place_detail.html:37
+msgid "Categories"
+msgstr ""
+
+#: places/models.py:30
+msgid "Image"
+msgstr ""
+
+#: places/models.py:33
+msgid "place"
+msgstr ""
+
+#: places/models.py:34
+msgid "places"
+msgstr ""
+
+#: places/urls.py:7
+msgid "places/"
+msgstr ""
+
+#: places/urls.py:8
+msgid "places/<int:pk>/"
+msgstr ""
+
+#: places/urls.py:9
+msgid "places/<int:pk>/update/"
+msgstr ""
+
+#: places/urls.py:10
+msgid "places/add/"
+msgstr ""
+
+#: templates/core/about_us.html:7 templates/partials/footer.html:12
+msgid "About us"
+msgstr ""
+
+#: templates/core/about_us.html:9
+msgid "Welcome to Adiciona Aqui!"
+msgstr ""
+
+#: templates/core/about_us.html:10
+msgid ""
+"We are Gabriel da Mota and Gabriela Rocco, students in the 5th semester of "
+"Information Technology at Univesp. We are very excited to present our "
+"project, Adiciona Aqui (Add Here), developed as part of the integrative "
+"project discipline."
+msgstr ""
+
+#: templates/core/about_us.html:11
+msgid ""
+"The idea came from a personal demand we faced recently, when we moved to "
+"this region. Finding local businesses was not always an easy task due to the "
+"lack of online presence of many establishments."
+msgstr ""
+
+#: templates/core/about_us.html:12
+msgid ""
+"We decided to use our technology knowledge and skills to create a "
+"collaborative solution. Thus Adiciona Aqui was born, a platform where users "
+"can recommend local businesses that do not yet have an online presence."
+msgstr ""
+
+#: templates/core/about_us.html:13
+msgid ""
+"Our main objective is to facilitate the discovery of these establishments "
+"and help them gain visibility on the internet, especially through Google "
+"Maps. We believe that strengthening the online presence of local businesses "
+"is essential to boost the region's economy and facilitate residents' access "
+"to quality local products and services."
+msgstr ""
+
+#: templates/core/about_us.html:14
+msgid ""
+"At Adiciona Aqui, you are a fundamental part of this collaborative process. "
+"We invite you to recommend businesses you know and share this platform with "
+"your friends, family and neighbors. The more people who participate, the "
+"more complete and useful our local business database will be."
+msgstr ""
+
+#: templates/core/about_us.html:15
+msgid ""
+"We value active community participation and are committed to providing a "
+"simple, intuitive platform where you can easily add new businesses and help "
+"promote the local economy. Together, we can make a difference and contribute "
+"to the growth of local businesses."
+msgstr ""
+
+#: templates/core/about_us.html:16
+msgid ""
+"We thank all users who join us on this journey. Adiciona Aqui is a project "
+"in constant evolution, and we count on your support, feedback and "
+"suggestions to continually improve it."
+msgstr ""
+
+#: templates/core/about_us.html:17
+msgid "Best regards,"
+msgstr ""
+
+#: templates/core/about_us.html:18
+msgid "Gabriel da Mota and Gabriela Rocco"
+msgstr ""
+
+#: templates/core/about_us.html:19
+msgid "Adiciona Aqui Team"
+msgstr ""
+
+#: templates/core/home.html:7
+msgid ""
+"Collaborate with the community and help small businesses and services gain "
+"visibility on the internet"
+msgstr ""
+
+#: templates/core/home.html:12
+msgid "How does it works?"
+msgstr ""
+
+#: templates/core/home.html:13
+msgid ""
+"With our service, you can easily add locations that aren't already on Google "
+"Maps, share useful information, and even share photos of the locations."
+msgstr ""
+
+#: templates/core/home.html:15
+msgid ""
+"We mainly want to help small local businesses that don't yet have a strong "
+"digital presence. With your help, we can make our platform a valuable "
+"resource for everyone!"
+msgstr ""
+
+#: templates/core/home.html:17
+msgid "Join us and add a new place"
+msgstr ""
+
+#: templates/core/home.html:24
+msgid "New additions"
+msgstr ""
+
+#: templates/partials/footer.html:5
+msgid "Homepage"
+msgstr ""
+
+#: templates/partials/footer.html:7 templates/partials/header.html:16
+msgid "Logout"
+msgstr ""
+
+#: templates/partials/footer.html:9 templates/users/login.html:19
+msgid "Log in"
+msgstr ""
+
+#: templates/partials/footer.html:10 templates/users/login.html:22
+#: templates/users/signup.html:5 templates/users/signup.html:8
+#: templates/users/signup.html:13
+msgid "Signup"
+msgstr ""
+
+#: templates/partials/header.html:6 templates/users/login.html:8
+msgid "Log In"
+msgstr ""
+
+#: templates/partials/header.html:14 templates/partials/header.html:19
+msgid "Add a place"
+msgstr ""
+
+#: templates/partials/header.html:15
+msgid "My places"
+msgstr ""
+
+#: templates/partials/header.html:18
+msgid "Found a new place?"
+msgstr ""
+
+#: templates/places/place_create.html:5
+msgid "Add a new place"
+msgstr ""
+
+#: templates/places/place_create.html:8
+msgid "Create a new place"
+msgstr ""
+
+#: templates/places/place_create.html:10
+msgid "Click here to collect your current location"
+msgstr ""
+
+#: templates/places/place_create.html:14
+msgid "Send"
+msgstr ""
+
+#: templates/places/place_detail.html:5
+msgid "Place"
+msgstr ""
+
+#: templates/places/place_detail.html:29
+msgid "Status"
+msgstr ""
+
+#: templates/places/place_detail.html:33 templates/places/place_list.html:29
+msgid "Pending"
+msgstr ""
+
+#: templates/places/place_detail.html:46
+msgid "Want to"
+msgstr ""
+
+#: templates/places/place_detail.html:46
+msgid "edit"
+msgstr ""
+
+#: templates/places/place_list.html:5 templates/places/place_list.html:8
+msgid "My Places"
+msgstr ""
+
+#: templates/places/place_list.html:36
+msgid "Page"
+msgstr ""
+
+#: templates/places/place_list.html:36
+msgid "of"
+msgstr ""
+
+#: templates/places/place_list.html:41 templates/places/place_list.html:47
+msgid "Previous"
+msgstr ""
+
+#: templates/places/place_list.html:52 templates/places/place_list.html:57
+msgid "Next"
+msgstr ""
+
+#: templates/places/place_update.html:5 templates/places/place_update.html:13
+msgid "Update"
+msgstr ""
+
+#: templates/places/place_update.html:8
+msgid "Update Place"
+msgstr ""
+
+#: templates/users/login.html:12
+msgid "Account is needed!"
+msgstr ""
+
+#: templates/users/login.html:12
+msgid "To add new places you must log in."
+msgstr ""
+
+#: templates/users/login.html:21 templates/users/password_reset.html:5
+#: templates/users/password_reset.html:8
+msgid "Forgot your password?"
+msgstr ""
+
+#: templates/users/login.html:21
+msgid "Reset"
+msgstr ""
+
+#: templates/users/login.html:22
+msgid "Don't have an account?"
+msgstr ""
+
+#: templates/users/password_reset.html:9
+msgid "Enter your email below, and we will send you instructions to reset it."
+msgstr ""
+
+#: templates/users/password_reset.html:14
+msgid "Send me instructions!"
+msgstr ""
+
+#: templates/users/password_reset_complete.html:5
+#: templates/users/password_reset_complete.html:8
+msgid "Password reset completed"
+msgstr ""
+
+#: templates/users/password_reset_complete.html:9
+msgid "Your new password has been set. Now you can"
+msgstr ""
+
+#: templates/users/password_reset_complete.html:9
+msgid "login"
+msgstr ""
+
+#: templates/users/password_reset_confirm.html:5
+msgid "Enter your new password"
+msgstr ""
+
+#: templates/users/password_reset_confirm.html:9
+msgid "Set your new password!"
+msgstr ""
+
+#: templates/users/password_reset_confirm.html:14
+msgid "Update my password"
+msgstr ""
+
+#: templates/users/password_reset_confirm.html:18
+msgid ""
+"The password reset link is invalid, possibly because it has already been "
+"used. Please make a new password reset request."
+msgstr ""
+
+#: templates/users/password_reset_done.html:5
+msgid "Email sent"
+msgstr ""
+
+#: templates/users/password_reset_done.html:8
+msgid "Check your inbox"
+msgstr ""
+
+#: templates/users/password_reset_done.html:9
+msgid ""
+"We have sent instructions to reset your password to your email. You should "
+"receive them soon."
+msgstr ""
+
+#: templates/users/signup.html:15
+msgid "Already registered?"
+msgstr ""
+
+#: templates/users/signup.html:15
+msgid "Login"
+msgstr ""
+
+#: users/admin.py:18
+msgid "Permissions"
+msgstr ""
+
+#: users/managers.py:17
+msgid "The Email must be set"
+msgstr ""
+
+#: users/managers.py:33
+msgid "Superuser must have is_staff=True."
+msgstr ""
+
+#: users/managers.py:35
+msgid "Superuser must have is_superuser=True."
+msgstr ""
+
+#: users/models.py:11
+msgid "email address"
+msgstr ""
+
+#: users/urls.py:7
+msgid "signup/"
+msgstr ""
+
+#: users/urls.py:8
+msgid "login/"
+msgstr ""
+
+#: users/urls.py:9
+msgid "logout/"
+msgstr ""
+
+#: users/urls.py:10
+msgid "password-reset/"
+msgstr ""
+
+#: users/urls.py:11
+msgid "password-reset/done/"
+msgstr ""
+
+#: users/urls.py:12
+msgid "reset/<uidb64>/<token>/"
+msgstr ""
+
+#: users/urls.py:13
+msgid "reset/done/"
+msgstr ""

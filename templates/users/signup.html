@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 
-{% block title %}Se registrar{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-    <h1 class="text-center text-gray-800 text-shadow text-2xl font-bold my-3">Registrar</h1>
+    <h1 class="text-center text-gray-800 text-shadow text-2xl font-bold my-3">{% trans "Signup" %}</h1>
     <div class="max-w-2xl mx-auto px-4">
         <form method="post" class="mb-4">
             {% include 'partials/form.html' with form=form %}
             {% csrf_token %}
-            <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">Registrar</button>
+            <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">{% trans "Signup" %}</button>
         </form>
-        <p class="text-center mb-3">Tem usuário? <a href="{% url 'login' %}" class="text-gray-800 underline">Faça o login</a></p>
+        <p class="text-center mb-3">{% trans "Already registered?" %} <a href="{% url 'login' %}" class="text-gray-800 underline">{% trans "Login" %}</a></p>
     </div>
 {% endblock %}

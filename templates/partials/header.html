@@ -1,8 +1,9 @@
 {% load static %}
+{% load i18n %}
 <header>
     {% if not user.is_authenticated %}
         <section class="bg-gray-800 px-6 text-white flex">
-            <p class="ml-auto"><a href="{% url 'login' %}" class="underline">Log In</a></p>
+            <p class="ml-auto"><a href="{% url 'login' %}" class="underline">{% trans "Log In" %}</a></p>
         </section>
     {% endif %}
     <nav class="py-4 px-6 bg-gray-100 ">
@@ -10,12 +11,12 @@
             <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt=""/></a>
             <div>
                 {% if user.is_authenticated %}
-                    <a href="{% url 'place_create' %}" class="bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-white">Adicionar local</a>
-                    <a href="{% url 'place_list' %}" class="focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-gray-700">Meus locais</a>
-                    <a href="{% url 'logout' %}" class="focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-gray-700">Sair</a>
+                    <a href="{% url 'place_create' %}" class="bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-white">{% trans "Add a place" %}</a>
+                    <a href="{% url 'place_list' %}" class="focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-gray-700">{% trans "My places" %}</a>
+                    <a href="{% url 'logout' %}" class="focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-gray-700">{% trans "Logout" %}</a>
                 {% else %}
-                    <span class="pr-2">Encontrou algo?</span>
-                    <a href="{% url 'place_create' %}" class="bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-white">Adicionar local</a>
+                    <span class="pr-2">{% trans "Found a new place?" %}</span>
+                    <a href="{% url 'place_create' %}" class="bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-white">{% trans "Add a place" %}</a>
                 {% endif %}
             </div>
         </div>

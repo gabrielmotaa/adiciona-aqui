@@ -25,7 +25,10 @@ django==4.2
     # via
     #   -r requirements/base.in
     #   dj-database-url
+    #   django-parler
 django-cloudinary-storage==0.3.0
+    # via -r requirements/base.in
+django-parler==2.3
     # via -r requirements/base.in
 django-widget-tweaks==1.4.12
     # via -r requirements/base.in

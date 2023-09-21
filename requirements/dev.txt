@@ -10,17 +10,25 @@ asgiref==3.6.0
     #   django
 brotli==1.1.0
     # via whitenoise
+build==1.0.3
+    # via pip-tools
 certifi==2023.7.22
     # via
     #   cloudinary
     #   requests
 charset-normalizer==3.2.0
     # via requests
+click==8.1.7
+    # via pip-tools
 cloudinary==1.34.0
     # via django-cloudinary-storage
 django==4.2
-    # via -r requirements/base.in
+    # via
+    #   -r requirements/base.in
+    #   django-parler
 django-cloudinary-storage==0.3.0
+    # via -r requirements/base.in
+django-parler==2.3
     # via -r requirements/base.in
 django-widget-tweaks==1.4.12
     # via -r requirements/base.in
@@ -28,8 +36,14 @@ djhtml==3.0.6
     # via -r requirements/dev.in
 idna==3.4
     # via requests
+packaging==23.1
+    # via build
 pillow==9.5.0
     # via -r requirements/base.in
+pip-tools==7.3.0
+    # via -r requirements/dev.in
+pyproject-hooks==1.0.0
+    # via build
 pytailwindcss==0.1.4
     # via -r requirements/dev.in
 python-decouple==3.8
@@ -48,5 +62,11 @@ urllib3==1.26.16
     # via
     #   cloudinary
     #   requests
+wheel==0.41.2
+    # via pip-tools
 whitenoise[brotli]==6.4.0
     # via -r requirements/base.in
+
+# The following packages are considered to be unsafe in a requirements file:
+# pip
+# setuptools
