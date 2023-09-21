@@ -7,3 +7,4 @@ django-widget-tweaks==1.4.12
 whitenoise[brotli]==6.4.0
 python-dotenv==1.0.0
 django-cloudinary-storage==0.3.0
+django-parler==2.3.0

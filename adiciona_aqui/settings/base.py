@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'widget_tweaks',
+    'parler',
 
     'core',
     'users',
@@ -169,3 +170,15 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 EMAIL_PORT = config('EMAIL_PORT', cast=int, default=25)
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool, default=False)
+
+# Model translation
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'pt-br'},
+    ),
+    'default': {
+        'fallbacks': ['pt-br'],
+        'hide_untranslated': False,
+    }
+}

@@ -1,11 +1,15 @@
+from parler.models import TranslatableModel, TranslatedFields
+
 from django.db import models
 from django.conf import settings
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 
-class Category(models.Model):
-    name = models.CharField(_('Name'), max_length=255, unique=True)
+class Category(TranslatableModel):
+    translations = TranslatedFields(
+        name=models.CharField(_('Name'), max_length=255, unique=True),
+    )
 
     class Meta:
         verbose_name = _('category')

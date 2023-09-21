@@ -1,10 +1,12 @@
 from django.contrib import admin
 
+from parler.admin import TranslatableAdmin
+
 from .models import Category, Place
 
 
 @admin.register(Category)
-class CategoryAdmin(admin.ModelAdmin):
+class CategoryAdmin(TranslatableAdmin):
     pass
 
 
