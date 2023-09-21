@@ -1,29 +1,27 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
     <section class="md:py-32 py-14 px-4 container mx-auto">
-        <h2 class="text-4xl text-center font-semibold">Colabore com a comunidade e ajude pequenos negócios e serviços a ganhar visibilidade na internet</h2>
+        <h2 class="text-4xl text-center font-semibold">{% trans "Collaborate with the community and help small businesses and services gain visibility on the internet" %}</h2>
     </section>
 
     <section class="bg-gray-800 py-14 md:py-16 px-6 text-white ">
         <div class="container mx-auto flex flex-col">
-            <h2 class="text-3xl mb-6">Como funciona?</h2>
-            <p class="text-gray-300 mb-4 text-lg">Com o nosso serviço, você pode adicionar facilmente locais que ainda
-                não estão no Google Maps, compartilhar informações úteis e até mesmo fotos dos locais.
-            </p>
+            <h2 class="text-3xl mb-6">{% trans "How does it works?" %}</h2>
+            <p class="text-gray-300 mb-4 text-lg">{% trans "With our service, you can easily add locations that aren't already on Google Maps, share useful information, and even share photos of the locations." %}</p>
             <p class="text-gray-300 text-lg">
-                Queremos ajudar principalmente pequenos negócios locais que ainda não têm uma presença digital forte.
-                Com sua ajuda, podemos tornar nossa plataforma um recurso valioso para todos!</p>
+                {% trans "We mainly want to help small local businesses that don't yet have a strong digital presence. With your help, we can make our platform a valuable resource for everyone!" %}</p>
             <a href="{% url 'place_create' %}"
-               class="mt-6 py-3 px-6 bg-white hover:bg-gray-300 text-black rounded-lg self-center max-w-sm text-center">Junte-se
-                a nós e adicione um novo local</a>
+               class="mt-6 py-3 px-6 bg-white hover:bg-gray-300 text-black rounded-lg self-center max-w-sm text-center">{% trans "Join us and add a new place" %}</a>
         </div>
     </section>
 
 
     <section class="py-14 md:py-16 px-6">
         <div class="container mx-auto">
-            <h2 class="text-3xl mb-10">Novas adições</h2>
+            <h2 class="text-3xl mb-10">{% trans "New additions" %}</h2>
             <div class="flex md:justify-between gap-6 md:flex-row flex-col items-center">
                 {% for place in places %}
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
