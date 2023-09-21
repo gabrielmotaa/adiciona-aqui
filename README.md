@@ -58,3 +58,15 @@ Ao fazer mudanças no template, para garantir um padronização, é possível ro
 ```commandline
 (venv) $ djhtml templates/
 ```
+
+### Tradução
+
+Para criar os arquivos `.po`:
+```commandline
+(venv) $ ./manage.py makemessages --all -i venv
+```
+
+Assim que os arquivos `.po` estiverem preenchidos, para compilar os arquivos `.mo`:
+```commandline
+(venv) $ ./manage.py compilemessages -i venv
+```
