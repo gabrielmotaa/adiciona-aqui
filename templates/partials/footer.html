@@ -1,6 +1,6 @@
-<section class="border-t py-10">
+<footer class="border-t py-10">
     <h3 class="text-center">Adiciona Aqui - {% now 'Y' %}</h3>
-    <div class="py-4 flex justify-center gap-3 underline-offset-2 underline">
+    <nav class="py-4 flex justify-center gap-3 underline-offset-2 underline">
         <a href="{% url 'home' %}">{% trans "Homepage" %}</a>
         {% if user.is_authenticated %}
             <a href="{% url 'logout' %}">{% trans "Logout" %}</a>
@@ -9,5 +9,5 @@
             <a href="{% url 'signup' %}">{% trans "Signup" %}</a>
         {% endif %}
         <a href="{% url 'about_us' %}">{% trans "About us" %}</a>
-    </div>
-</section>
+    </nav>
+</footer>

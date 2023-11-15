@@ -1,9 +1,9 @@
 {% load static %}
 <header>
     {% if not user.is_authenticated %}
-        <section class="bg-gray-800 px-6 text-white flex">
-            <p class="ml-auto"><a href="{% url 'login' %}" class="underline">{% trans "Log In" %}</a></p>
-        </section>
+        <nav class="bg-gray-800 px-6 text-white flex">
+            <a href="{% url 'login' %}" class="ml-auto"><span class="underline">{% trans "Log In" %}</span></a>
+        </nav>
     {% endif %}
     <nav class="py-4 px-6 bg-gray-100 ">
         <div class="container flex justify-between items-center mx-auto">
