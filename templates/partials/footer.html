@@ -1,5 +1,5 @@
 <footer class="border-t py-10">
-    <h3 class="text-center">Adiciona Aqui - {% now 'Y' %}</h3>
+    <p class="text-center">Adiciona Aqui - {% now 'Y' %}</p>
     <nav class="py-4 flex justify-center gap-3 underline-offset-2 underline">
         <a href="{% url 'home' %}">{% trans "Homepage" %}</a>
         {% if user.is_authenticated %}
