@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-{% load i18n %}
-
 {% block content %}
     <section class="md:py-32 py-14 px-4 container mx-auto">
         <h2 class="text-4xl text-center font-semibold">{% trans "Collaborate with the community and help small businesses and services gain visibility on the internet" %}</h2>
@@ -24,13 +22,13 @@
             <h2 class="text-3xl mb-10">{% trans "New additions" %}</h2>
             <div class="flex md:justify-between gap-6 md:flex-row flex-col items-center">
                 {% for place in places %}
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                        <img class="rounded-t-lg aspect-[3/2] object-cover" src="{{ place.image.url }}" alt="">
+                    <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                        <img class="rounded-t-lg aspect-[3/2] object-cover" src="{{ place.image.url }}" alt="{% trans 'Place Image' %}">
                         <div class="p-5">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ place.name }}</h5>
+                            <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ place.name }}</h3>
                             <p class="mb-3 font-normal text-gray-700">{{ place.address }}</p>
                         </div>
-                    </div>
+                    </article>
                 {% endfor %}
             </div>
         </div>

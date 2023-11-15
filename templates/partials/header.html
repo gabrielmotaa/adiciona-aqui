@@ -1,14 +1,13 @@
 {% load static %}
-{% load i18n %}
 <header>
     {% if not user.is_authenticated %}
-        <section class="bg-gray-800 px-6 text-white flex">
-            <p class="ml-auto"><a href="{% url 'login' %}" class="underline">{% trans "Log In" %}</a></p>
-        </section>
+        <nav class="bg-gray-800 px-6 text-white flex">
+            <a href="{% url 'login' %}" class="ml-auto"><span class="underline">{% trans "Log In" %}</span></a>
+        </nav>
     {% endif %}
     <nav class="py-4 px-6 bg-gray-100 ">
         <div class="container flex justify-between items-center mx-auto">
-            <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt=""/></a>
+            <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="{% trans 'Adiciona Aqui Logo' %}"/></a>
             <div>
                 {% if user.is_authenticated %}
                     <a href="{% url 'place_create' %}" class="bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium px-4 py-2 rounded-lg text-white">{% trans "Add a place" %}</a>
