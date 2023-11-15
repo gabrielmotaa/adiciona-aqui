@@ -5,7 +5,7 @@
 {% block content %}
     <h1 class="text-center text-gray-800 text-shadow text-2xl font-bold pt-3 my-3">{{ place.name }}</h1>
     <div class="border shadow my-6 max-w-6xl mx-auto md:flex">
-        <div class="md:flex-1"><img class="h-full object-cover aspect-[3/2]" src="{{ place.image.url }}"></div>
+        <div class="md:flex-1"><img class="h-full object-cover aspect-[3/2]" src="{{ place.image.url }}" alt="{% trans 'Place Image' %}"></div>
         <div class="md:flex-1 grid grid-rows-4 grid-cols-2">
             <div class="p-4">
                 <p class="block mb-2 text-md font-bold text-gray-900">{% trans "Address" %}</p>
