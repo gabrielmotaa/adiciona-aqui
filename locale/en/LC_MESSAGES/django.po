@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-15 20:33-0300\n"
+"POT-Creation-Date: 2023-11-15 21:21-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,7 +214,7 @@ msgstr ""
 msgid "New additions"
 msgstr ""
 
-#: templates/core/home.html:26
+#: templates/core/home.html:26 templates/places/place_detail.html:8
 msgid "Place Image"
 msgstr ""
 
@@ -222,7 +222,7 @@ msgstr ""
 msgid "Homepage"
 msgstr ""
 
-#: templates/partials/footer.html:6 templates/partials/header.html:15
+#: templates/partials/footer.html:6 templates/partials/header.html:30
 msgid "Logout"
 msgstr ""
 
@@ -236,23 +236,35 @@ msgstr ""
 msgid "Signup"
 msgstr ""
 
-#: templates/partials/header.html:5 templates/users/login.html:6
-msgid "Log In"
+#: templates/partials/header.html:5
+msgid "Choose the language:"
 msgstr ""
 
-#: templates/partials/header.html:10
-msgid "Adiciona Aqui Logo"
-msgstr ""
-
-#: templates/partials/header.html:13 templates/partials/header.html:18
-msgid "Add a place"
+#: templates/partials/header.html:12
+msgid "Select current language"
 msgstr ""
 
 #: templates/partials/header.html:14
+msgid "selected"
+msgstr ""
+
+#: templates/partials/header.html:20 templates/users/login.html:6
+msgid "Log In"
+msgstr ""
+
+#: templates/partials/header.html:25
+msgid "Adiciona Aqui Logo"
+msgstr ""
+
+#: templates/partials/header.html:28 templates/partials/header.html:33
+msgid "Add a place"
+msgstr ""
+
+#: templates/partials/header.html:29
 msgid "My places"
 msgstr ""
 
-#: templates/partials/header.html:17
+#: templates/partials/header.html:32
 msgid "Found a new place?"
 msgstr ""
 
