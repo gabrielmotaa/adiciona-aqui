@@ -1,13 +1,13 @@
-from .base import *
-
 import os
 
 import dj_database_url
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
+from .base import *
+
 sentry_sdk.init(
-    dsn=os.environ['SENTRY_DSN'],
+    dsn=os.environ["SENTRY_DSN"],
     integrations=[
         DjangoIntegration(),
     ],
@@ -16,11 +16,11 @@ sentry_sdk.init(
 )
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ['DATABASE_URL'], conn_max_age=600),
+    "default": dj_database_url.parse(os.environ["DATABASE_URL"], conn_max_age=600),
 }
 
-DEBUG = 'RENDER' not in os.environ
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+DEBUG = "RENDER" not in os.environ
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
