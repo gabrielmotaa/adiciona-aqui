@@ -6,7 +6,7 @@
     <h1 class="text-center text-gray-800 text-shadow text-2xl font-bold mt-4 mb-2">{% trans "My Places" %}</h1>
     <div class="p-4 max-w-6xl mx-auto space-y-4 mb-4">
         {% for place in places %}
-            <div class="border shadow rounded flex justify-between py-4 px-6">
+            <div class="border shadow rounded flex flex-col md:flex-row justify-between py-4 px-6">
 
                 <div>
                     <p class="block mb-2 text-md font-bold text-gray-900">{% trans "Name" %}</p>
